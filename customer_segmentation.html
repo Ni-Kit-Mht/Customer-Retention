@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}Customer Segmentation Form{% endblock %}
+
+{% block content %}
+    <h1>Customer Segmentation Form</h1>
+    <form method="post" action="/segmentation">
+        <input type="text" name="segmentation_criteria" placeholder="Segmentation Criteria" required><br>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
